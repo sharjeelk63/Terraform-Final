@@ -21,8 +21,9 @@ resource "aws_instance" "demo-instance" {
 
   # Define tags for the instance.
   tags = {
-    name = "demo"   # Tag indicating the name of the instance.
-    env  = "dev"    # Tag indicating the environment (development) of the instance.
+    Name = "sharjeel" # if N is caps in Name then it will reflect on EC2 name or else get added to Tags
+    name = "terraform-example"   # Tag indicating the name of the instance.
+
   }
 }
 
